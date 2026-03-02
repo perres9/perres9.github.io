@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    text-align: center;
+}
+
+header {
+    padding: 120px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    background: linear-gradient(90deg, #38bdf8, #22d3ee);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header p {
+    margin: 20px 0;
+    color: #94a3b8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #38bdf8;
+    color: #0f172a;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #22d3ee;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 80px 20px;
+}
+
+h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(56, 189, 248, 0.15);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background: #38bdf8;
+    color: #0f172a;
+    transform: scale(1.1);
+}
+
+/* ANIMAÇÕES */
+
+.fade-in {
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #94a3b8;
+}
